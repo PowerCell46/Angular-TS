@@ -1,0 +1,14 @@
+
+
+<div *ngIf="isToggle">
+    <img [ngClass]="badCurly" [attr.src]="imgUrl" />
+</div>
+
+<p [class.isShiny]="isToggle">Wow</p>
+
+<button (click)="handleClick($event)">Click Me!</button>
+
+
+<input type="text" #username>
+
+<button [style.background-color]="colorValue" (click)="handleInput(username.value)">Hangle Button</button>

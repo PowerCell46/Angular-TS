@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'components';
+  colorValue = 'yellow'
+
+  onOutputFromChild(inputValue: string): void {
+    console.log("from parent:", inputValue);
+  }
 }

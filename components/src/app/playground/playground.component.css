@@ -1,0 +1,17 @@
+div {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-wrapper-img {
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    width: 50%;
+    border-radius: 0.4rem;
+}
+
+.isShiny {
+    color: blanchedalmond;
+}

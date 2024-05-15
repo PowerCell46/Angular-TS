@@ -1,0 +1,13 @@
+<ul>
+    <li *ngFor="let user of users; index as i">
+
+        <span [ngClass]="user.status" *ngIf="i % 2 === 0">
+            Name: {{user.name}} with Age: {{user.age}} 
+        </span>
+        
+        <span ngClass="user.status" *ngIf="i % 2 !== 0">
+            {{user.name}},{{user.age}} years of age. 
+        </span>
+        
+    </li>
+</ul>

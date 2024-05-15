@@ -1,0 +1,27 @@
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    width: 30%;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+li {
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h5 {
+    color: white;
+}
+
+.active {
+    background-color: forestgreen;
+}
+
+.innactive {
+    background-color: darkred;
+}
