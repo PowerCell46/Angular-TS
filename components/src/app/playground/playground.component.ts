@@ -32,6 +32,7 @@ export class PlaygroundComponent implements OnInit, OnDestroy {
   }
 
   handleClick(event: Event): void {
+    console.log(event.target);
     this.isToggle = !this.isToggle;
   }
 

@@ -6,5 +6,5 @@ import { Component } from "@angular/core";
     styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent {
-
+    public navigationLis: string[] = ["Home", "About", "Register", "Login"]
 }

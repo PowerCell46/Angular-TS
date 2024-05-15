@@ -1,8 +1,5 @@
 <nav>
     <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Register</li>
-        <li>Login</li>
+        <li *ngFor="let liContent of navigationLis">{{liContent}}</li>
     </ul>
 </nav>
