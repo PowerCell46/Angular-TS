@@ -1,0 +1,13 @@
+
+<h2>{{title}}</h2>
+
+<app-user-list [users]="users"/>
+
+
+<div>
+    <input type="text" placeholder="name" #name>
+
+    <input type="number" placeholder="age" #age>
+
+    <button (click)="addUserHandler(name.value, age.value)">Add User</button>
+</div>
