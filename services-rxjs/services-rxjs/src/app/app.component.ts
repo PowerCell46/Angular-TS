@@ -9,20 +9,17 @@ interface User {
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  // changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
   title = 'services-rxjs';
   users: User[] = [{name: "Peter", age: 20}, {name: "Stiliyan", age: 20}, {name: "Kaloyan", age: 20}]
 
-  // constructor(private cd: ChangeDetectorRef) {
-  //   setTimeout(() => {
-  //     this.title = 'Changed from detector!';
-  //     this.cd.detectChanges();
-  //   }, 3000);
-  // }
 
-  addUserHandler(username: string, age: string): void {
-    this.users.push({name: username, age: Number(age)});
+
+  addUserHandler(name: HTMLInputElement, age: HTMLInputElement): void {
+    // this.users = [...this.users, {name: name.value, age: Number(age.value)}];
+    this.users.push({name: name.value, age: Number(age.value)});
+    
+    name.value = ""; age.value = "";
   }
 }
