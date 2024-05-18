@@ -1,7 +1,7 @@
 
 <h2>{{title}}</h2>
 
-<app-user-list [users]="users"/>
+<app-user-list [users]="userService.users"/>
 
 
 <div>
@@ -9,5 +9,5 @@
 
     <input type="number" placeholder="age" #age>
 
-    <button (click)="addUserHandler(name, age)">Add User</button>
+    <button (click)="setUsers(name, age)">Add User</button>
 </div>

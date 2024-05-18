@@ -1,9 +1,6 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
+import { UserService } from './user.service';
 
-interface User {
-  name: string,
-  age: number
-}
 
 @Component({
   selector: 'app-root',
@@ -12,14 +9,10 @@ interface User {
 })
 export class AppComponent {
   title = 'services-rxjs';
-  users: User[] = [{name: "Peter", age: 20}, {name: "Stiliyan", age: 20}, {name: "Kaloyan", age: 20}]
+ 
+  constructor(public userService: UserService) {}
 
-
-
-  addUserHandler(name: HTMLInputElement, age: HTMLInputElement): void {
-    // this.users = [...this.users, {name: name.value, age: Number(age.value)}];
-    this.users.push({name: name.value, age: Number(age.value)});
-    
-    name.value = ""; age.value = "";
+  setUsers(inputName: HTMLInputElement, inputAge: HTMLInputElement) {
+    this.userService.addUserHandler(inputName, inputAge);
   }
 }
