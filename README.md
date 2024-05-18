@@ -1,2 +1,32 @@
-# Angular-TS
-A repository containing all of the Apps done in the course Angular TS, February 2024.
+<div align="center">
+  <img src="https://github.com/PowerCell46/React-JS/blob/main/ReactJS%20-Oct%202023%20-%20Peter%20Gerdzhikov.jpeg"
+  alt="JS-Backend-Jan-2024">
+</div>
+
+---
+
+## Course topics / Изучавани теми в курса 
+
+- Intro to Angular and TypeScript
+- Components
+- DI, Intro to RxJS, Services
+- Modules and Routing
+- Forms
+- Pipes, Interceptors and Subjects
+- State Management 
+
+## Acquired skills / Придобити умения
+
+- Разработка на клиентски приложения с Angular
+- Изграждане на компонентно-базирани приложения
+- Работа със SPA концепции
+- Работа с основни концепции от TypeScript
+- Работа с отдалечени REST услуги
+- Работа с шаблони и рутиране
+
+## Links / Линкове
+
+- SoftUni 
+<a href="https://softuni.bg">`https://softuni.bg`</a>
+- SoftUni Judge 
+<a href="https://judge.softuni.bg">`https://judge.softuni.bg`</a>
