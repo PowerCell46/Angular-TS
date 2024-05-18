@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="https://github.com/PowerCell46/React-JS/blob/main/ReactJS%20-Oct%202023%20-%20Peter%20Gerdzhikov.jpeg"
-  alt="JS-Backend-Jan-2024">
+  <img src="https://github.com/PowerCell46/Angular-TS/blob/main/Angular%20-%20Feb%20-%202024%20-%20%20Peter%20Gerdzhikov.jpeg"
+  alt="Angular-Feb-2024">
 </div>
 
 ---
