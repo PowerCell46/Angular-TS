@@ -9,9 +9,15 @@ import { Theme } from 'src/utils/interfaces';
 })
 export class ThemesListComponent implements OnInit {
   themes: Theme[] = [];
+  isLoading:Boolean = true;
   constructor(private api: ApiService) {};
 
   ngOnInit(): void {
-    this.api.getThemes().subscribe(themes => this.themes = themes)
+    this.api.getThemes().subscribe(themes => {
+      this.themes = themes;
+      // setTimeout(() => {
+        this.isLoading = false;
+      //  }, 2000);
+    })
   }
 }
