@@ -39,8 +39,7 @@ export class PlaygroundComponent implements OnInit, OnDestroy {
   handleInput(username: string): void {
     console.log(username);
     console.log(this.colorValue);
-    this.onTestOutput.emit(username);
-     
+    this.onTestOutput.emit(username);   
   }
 
   logMessage = (): void => {
