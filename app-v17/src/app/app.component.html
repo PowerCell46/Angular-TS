@@ -1,0 +1,41 @@
+<div>{{title}}</div>
+
+<ul>
+  @for (task of tasks; track task.name) {
+    @if (task.status === "done") {
+      <li style="border: 1px solid green;">{{task.name}} - {{task.status}}</li>
+    } 
+    @else if (task.status === "in progress") {
+      <li style="border: 1px solid blue;">{{task.name}} - {{task.status}}</li>
+    }
+    @else {
+      <li style="border: 1px solid darkred;">{{task.name}} - {{task.status}}</li>
+    }
+
+    @switch (task.status)  {
+      @case ('todo') {
+
+      } @case ("in progress") {
+
+      } @case ("done") {
+
+      } @default {
+
+      }
+    }
+  } @empty {
+    <div>Sorry, this collection is empty... </div>
+  }
+
+</ul>
+
+<app-home-test/>
+
+<router-outlet/>
+
+<div>
+  @defer {
+    Defer on view port
+  }@loading {Loading...}
+  @placeholder {}
+</div>
