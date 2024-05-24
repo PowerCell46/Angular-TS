@@ -1,0 +1,16 @@
+.navbtn {
+    margin: 20px;
+    padding: 20px;
+    background-color: chocolate;   
+    color: #fff;
+    width: fit-content;
+}
+
+.navbtn:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+.current {
+    background-color: darkblue;
+}
