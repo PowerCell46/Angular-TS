@@ -7,7 +7,6 @@ import { UserRoutingModule } from './user-routing.module';
 import { RouterModule } from '@angular/router';
 
 
-
 @NgModule({
   declarations: [
     LoginComponent,
@@ -17,7 +16,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     UserRoutingModule,
-    RouterModule 
+    RouterModule
   ]
 })
 export class UserModule { }
